@@ -3,5 +3,19 @@
 }
 
 html {
-  background-color: snow;
+  --background-color-article1: #f3f3f3;
+  --background-color-article2: #dea9b6;
+  --background-color-article3: #a3b7ae;
+  --background-color-footer: #010101;
+  --background-color-body: snow;
+  --background-color-header: snow;
+  --color-text: snow;
+
+  font-family: "Roboto", serifenlos;
+  margin: 0px;
+}
+
+h2,
+h3 {
+  font-family: "Lato", serifenlos;
 }
