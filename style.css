@@ -29,18 +29,28 @@ h3 {
 }
 .div-logo {
   background-color: var(--background-color-body);
-  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 20rem;
+  margin-top: 0.5rem;
 }
 
 .navigation {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-content: center;
 }
 
 .navigationsbar {
   background-color: var(--background-color-header);
   display: inline-block;
+}
+.nav-a {
+  color: var(--background-color-footer);
+  text-decoration: none;
+  font-size: 20px;
 }
 .image-header {
   background-image: url(pexels-roberto-nickson-2559941.jpg);
@@ -52,22 +62,22 @@ h3 {
 
 .article1 {
   background-color: var(--background-color-article1);
-  _border: 2px solid rgb(4, 7, 0);
+  border: 2px solid rgb(4, 7, 0);
 }
 
 .article2 {
   background-color: var(--background-color-article2);
-  _border: 2px solid rgb(4, 7, 0);
+  border: 2px solid rgb(4, 7, 0);
   margin-top: 50px;
   margin-bottom: 30px;
 }
 .article3 {
   background-color: var(--background-color-article3);
-  _border: 2px solid rgb(4, 7, 0);
+  border: 2px solid rgb(4, 7, 0);
 }
 .article4 {
   background-color: var(--background-color-article4);
-  _border: 2px solid rgb(4, 7, 0);
+  border: 2px solid rgb(4, 7, 0);
 }
 
 /*parent-Element*/
