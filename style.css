@@ -28,7 +28,7 @@ h3 {
   font-family: "Lato", serifenlos;
 }
 .h2-headline {
-  padding-top: 2rem;
+  padding-top: 4rem;
   line-height: 1.85rem;
 }
 .div-logo {
@@ -66,13 +66,21 @@ h3 {
 
 .article1 {
   background-color: var(--background-color-article1);
-  border: 2px solid rgb(4, 7, 0);
+  border: 2px solid var(--background-color-article1);
+  margin-bottom: 6rem;
 }
 
+.h2-article1 {
+  line-height: 1.85rem;
+}
+.h3-article1 {
+  margin-bottom: 2rem;
+}
 .article2 {
   background-color: var(--background-color-article2);
   text-align: center;
 }
+
 .button-article2 {
   border: 0.125rem solid var(--color-border-button);
   background-color: var(--background-color-article2);
@@ -81,7 +89,7 @@ h3 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 .article3 {
   background-color: var(--background-color-article3);
@@ -100,13 +108,12 @@ h3 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 /*parent-Element*/
 .footer {
   background-color: var(--background-color-footer);
-  text-align: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -114,6 +121,7 @@ h3 {
 /*child-Element*/
 .footer-link {
   display: block;
+  text-align: center;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
