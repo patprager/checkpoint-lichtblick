@@ -5,12 +5,15 @@
 html {
   --background-color-article1: #f3f3f3;
   --background-color-article2: #dea9b6;
-  --background-color-article3: #a3b7ae;
+  --background-color-article3: snow;
+  --background-color-article4: #a3b7ae;
+
   --background-color-footer: #010101;
   --background-color-body: snow;
   --background-color-header: snow;
+
   --color-text: snow;
-  --color-copyrite: #a3b7ae;
+  --color-copyrite: #737373;
 
   font-family: "Roboto", serifenlos;
   margin: 0px;
@@ -20,7 +23,42 @@ h2,
 h3 {
   font-family: "Lato", serifenlos;
 }
+.header {
+  background-color: var(--background-color-header);
+}
 
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navigationsbar {
+  background-color: var(--background-color-header);
+  display: inline-block;
+}
+
+.article1 {
+  background-color: var(--background-color-article1);
+  border: 2px solid rgb(4, 7, 0);
+}
+
+.article2 {
+  background-color: var(--background-color-article2);
+  border: 2px solid rgb(4, 7, 0);
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.article3 {
+  background-color: var(--background-color-article3);
+  border: 2px solid rgb(4, 7, 0);
+}
+.article4 {
+  background-color: var(--background-color-article4);
+  border: 2px solid rgb(4, 7, 0);
+}
+
+/*parent-Element*/
 .footer {
   background-color: var(--background-color-footer);
   text-align: center;
@@ -28,6 +66,7 @@ h3 {
   padding-bottom: 2rem;
 }
 
+/*child-Element*/
 .footer-link {
   display: block;
   margin-top: 2rem;
