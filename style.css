@@ -10,6 +10,7 @@ html {
   --background-color-body: snow;
   --background-color-header: snow;
   --color-text: snow;
+  --color-copyrite: #a3b7ae;
 
   font-family: "Roboto", serifenlos;
   margin: 0px;
@@ -18,4 +19,28 @@ html {
 h2,
 h3 {
   font-family: "Lato", serifenlos;
+}
+
+.footer {
+  background-color: var(--background-color-footer);
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footer-link {
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-a {
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.footer-text {
+  color: var(--color-copyrite);
+  text-align: center;
+  padding-top: 2rem;
 }
