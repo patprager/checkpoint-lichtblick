@@ -13,6 +13,7 @@
 
   --color-text: snow;
   --color-copyrite: #737373;
+  --color-border-button: #010101;
 }
 
 body {
@@ -25,7 +26,10 @@ body {
 h2,
 h3 {
   font-family: "Lato", serifenlos;
-  line-height: 1.6rem;
+}
+.h2-headline {
+  padding-top: 2rem;
+  line-height: 1.85rem;
 }
 .div-logo {
   background-color: var(--background-color-body);
@@ -67,9 +71,17 @@ h3 {
 
 .article2 {
   background-color: var(--background-color-article2);
-  border: 2px solid rgb(4, 7, 0);
-  margin-top: 50px;
-  margin-bottom: 30px;
+  text-align: center;
+}
+.button-article2 {
+  border: 0.125rem solid var(--color-border-button);
+  background-color: var(--background-color-article2);
+  font-weight: 500;
+  border-radius: 0.3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .article3 {
   background-color: var(--background-color-article3);
@@ -77,7 +89,18 @@ h3 {
 }
 .article4 {
   background-color: var(--background-color-article4);
-  border: 2px solid rgb(4, 7, 0);
+  text-align: center;
+}
+
+.button-article4 {
+  border: 0.125rem solid var(--color-border-button);
+  background-color: var(--background-color-article4);
+  font-weight: 500;
+  border-radius: 0.3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 /*parent-Element*/
