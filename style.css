@@ -39,6 +39,17 @@ html {
   margin: 0px;
 }
 
+main {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
 h2,
 h3 {
   font-family: "Lato", serifenlos;
@@ -74,7 +85,6 @@ h3 {
   .navigation {
     display: flex;
     flex-direction: row;
-    _justify-content: space-around;
   }
 
   .footer-list {
@@ -98,6 +108,7 @@ h3 {
   height: 60vmin;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
   background-color: #737373;
 }
 
@@ -119,12 +130,11 @@ h3 {
   padding-left: 0.5rem;
   padding-bottom: 4rem;
 }
-
+/*article 2 ist zeigt kein identisches Verhalten wie article 4, trotz gleicher Werte*/
 .article2 {
   background-color: var(--background-color-article2);
   text-align: center;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding: 5rem;
 }
 
 .button-article2 {
@@ -137,16 +147,25 @@ h3 {
   margin-top: 2rem;
   margin-bottom: 4rem;
 }
+
 .article3 {
   background-color: var(--background-color-article3);
   margin-top: 100px;
   margin-bottom: 50px;
-}
-.section-klima {
+  align-items: center;
   display: inline-block;
   text-align: center;
 }
 
+@media screen and (min-width: 992px) {
+  .emobilität-podcast {
+    display: flex;
+    justify-content: space-between;
+
+    flex-grow: 0.1;
+    flex-direction: center;
+  }
+}
 .section-emobilität {
   border: 2.5px solid var(--color-border);
   width: 460px;
@@ -213,8 +232,7 @@ h3 {
 .article4 {
   background-color: var(--background-color-article4);
   text-align: center;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding: 5rem;
 }
 
 .button-article4 {
