@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
 }
+
+/*festlegte Standart Farben im Document*/
 :root {
   --background-color-article1: #f3f3f3;
   --background-color-article2: #dea9b6;
@@ -13,13 +15,27 @@
 
   --color-text: snow;
   --color-copyrite: #737373;
-  --color-border-button: #010101;
+  --color-border: #010101;
+}
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
-body {
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+html {
   background-color: var(--background-color-body);
   font-family: "Roboto", serifenlos;
-  line-height: 1.38rem;
+  font-size: 16px;
+  line-height: 20px;
   margin: 0px;
 }
 
@@ -27,6 +43,19 @@ h2,
 h3 {
   font-family: "Lato", serifenlos;
 }
+
+/* 
+@media screen and (min-width: 768px) {
+  .arctile3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+
+*/
+
 .h2-headline {
   padding-top: 4rem;
   line-height: 1.85rem;
@@ -64,7 +93,7 @@ h3 {
   background-color: #737373;
 }
 
-.article1 {
+.section-article1 {
   background-color: var(--background-color-article1);
   border: 2px solid var(--background-color-article1);
   margin-bottom: 6rem;
@@ -82,7 +111,7 @@ h3 {
 }
 
 .button-article2 {
-  border: 0.125rem solid var(--color-border-button);
+  border: 0.125rem solid var(--color-border);
   background-color: var(--background-color-article2);
   font-weight: 500;
   border-radius: 0.3rem;
@@ -93,7 +122,76 @@ h3 {
 }
 .article3 {
   background-color: var(--background-color-article3);
-  border: 2px solid rgb(4, 7, 0);
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.section-klima {
+  display: inline-block;
+  text-align: center;
+}
+
+.section-emobilität {
+  border: 2.5px solid var(--color-border);
+  width: 460px;
+  text-align: left;
+  border-radius: 6px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.img-emobilität {
+  position: relative;
+  border-radius: 7px 7px 0 0;
+  width: 100%;
+  z-index: -2;
+  margin-top: 5px;
+  margin-left: -5px;
+}
+.h3-emobilität {
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.p-emobilität {
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.a-emobilität {
+  color: #010101;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.section-podcast {
+  border: 2.5px solid var(--color-border);
+  width: 460px;
+  text-align: left;
+  border-radius: 6px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.img-podcast {
+  position: relative;
+  border-radius: 7px 7px 0 0;
+  width: 100%;
+  z-index: -2;
+  margin-top: 5px;
+  margin-left: -5px;
+}
+.h3-podcast {
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.p-podcast {
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.a-podcast {
+  color: #010101;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-left: 10px;
 }
 .article4 {
   background-color: var(--background-color-article4);
@@ -101,7 +199,7 @@ h3 {
 }
 
 .button-article4 {
-  border: 0.125rem solid var(--color-border-button);
+  border: 0.125rem solid var(--color-border);
   background-color: var(--background-color-article4);
   font-weight: 500;
   border-radius: 0.3rem;
@@ -117,7 +215,11 @@ h3 {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-
+@media screen and (min-width: 992px) {
+  .footer-link {
+    _display: inline-block;
+  }
+}
 /*child-Element*/
 .footer-link {
   display: block;
@@ -133,6 +235,7 @@ h3 {
 
 .footer-text {
   color: var(--color-copyrite);
+  display: block;
   text-align: center;
   padding-top: 2rem;
 }
