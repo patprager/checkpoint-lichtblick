@@ -44,17 +44,12 @@ h3 {
   font-family: "Lato", serifenlos;
 }
 
-/* 
-@media screen and (min-width: 768px) {
-  .arctile3 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+.main-flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-
-
-*/
 
 .h2-headline {
   padding-top: 4rem;
@@ -75,7 +70,20 @@ h3 {
   justify-content: space-around;
   align-content: center;
 }
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    _justify-content: space-around;
+  }
 
+  .footer-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+  }
+}
 .navigationsbar {
   background-color: var(--background-color-header);
   display: inline-block;
@@ -100,14 +108,23 @@ h3 {
 }
 
 .h2-article1 {
-  line-height: 1.85rem;
+  font-size: 32px;
+  line-height: 2rem;
+  padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 .h3-article1 {
+  line-height: 1.5rem;
   margin-bottom: 2rem;
+  padding-left: 0.5rem;
+  padding-bottom: 4rem;
 }
+
 .article2 {
   background-color: var(--background-color-article2);
   text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .button-article2 {
@@ -196,6 +213,8 @@ h3 {
 .article4 {
   background-color: var(--background-color-article4);
   text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .button-article4 {
