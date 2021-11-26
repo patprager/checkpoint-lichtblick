@@ -1,0 +1,282 @@
+* {
+  box-sizing: border-box;
+}
+
+/*festlegte Standart Farben im Document*/
+:root {
+  --background-color-article1: #f3f3f3;
+  --background-color-article2: #dea9b6;
+  --background-color-article3: snow;
+  --background-color-article4: #a3b7ae;
+
+  --background-color-footer: #010101;
+  --background-color-body: snow;
+  --background-color-header: snow;
+
+  --color-text: snow;
+  --color-copyrite: #737373;
+  --color-border: #010101;
+}
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+html {
+  background-color: var(--background-color-body);
+  font-family: "Roboto", serifenlos;
+  font-size: 18px;
+  line-height: 1.6rem;
+  margin: 0px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+h2,
+h3 {
+  font-family: "Lato", serifenlos;
+}
+
+.main-flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.h2-headline {
+  padding-top: 4rem;
+  line-height: 1.85rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.div-logo {
+  background-color: var(--background-color-body);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 20rem;
+  margin-top: 0.5rem;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+}
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+  }
+}
+.navigationsbar {
+  background-color: var(--background-color-header);
+  display: inline-block;
+}
+.nav-a {
+  color: var(--background-color-footer);
+  text-decoration: none;
+  font-size: 20px;
+}
+.image-header {
+  background-image: url(pexels-roberto-nickson-2559941.jpg);
+  height: 60vmin;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #737373;
+}
+
+.section-article1 {
+  background-color: var(--background-color-article1);
+  border: 2px solid var(--background-color-article1);
+  margin-bottom: 6rem;
+}
+
+.h2-article1 {
+  font-size: 32px;
+  line-height: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: 0.5rem;
+}
+.h3-article1 {
+  line-height: 1.95rem;
+  margin-bottom: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: 4rem;
+}
+
+.article2 {
+  background-color: var(--background-color-article2);
+  text-align: center;
+  padding: 5rem;
+}
+
+.button-article2 {
+  border: 0.125rem solid var(--color-border);
+  background-color: var(--background-color-article2);
+  font-weight: 500;
+  border-radius: 0.3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.article3 {
+  background-color: var(--background-color-article3);
+  margin-top: 100px;
+  margin-bottom: 50px;
+  align-items: center;
+  display: inline-block;
+  text-align: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+@media screen and (min-width: 992px) {
+  .emobilität-podcast {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 0.1;
+    flex-direction: center;
+  }
+}
+.section-emobilität {
+  border: 2.5px solid var(--color-border);
+  width: 460px;
+  text-align: left;
+  border-radius: 6px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.img-emobilität {
+  position: relative;
+  border-radius: 7px 7px 0 0;
+  width: 100%;
+  z-index: -2;
+  margin-top: 5px;
+  margin-left: -5px;
+}
+.h3-emobilität {
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.p-emobilität {
+  margin-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.a-emobilität {
+  color: #010101;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.section-podcast {
+  border: 2.5px solid var(--color-border);
+  width: 460px;
+  text-align: left;
+  border-radius: 6px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.img-podcast {
+  position: relative;
+  border-radius: 7px 7px 0 0;
+  width: 100%;
+  z-index: -2;
+  margin-top: 5px;
+  margin-left: -5px;
+}
+.h3-podcast {
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.p-podcast {
+  margin-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.a-podcast {
+  color: #010101;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.article4 {
+  background-color: var(--background-color-article4);
+  text-align: center;
+  padding: 5rem;
+  margin-top: 6rem;
+}
+
+.button-article4 {
+  border: 0.125rem solid var(--color-border);
+  background-color: var(--background-color-article4);
+  font-weight: 500;
+  border-radius: 0.3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+/*parent-Element*/
+.footer {
+  background-color: var(--background-color-footer);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/*child-Element*/
+.footer-link {
+  display: block;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-a {
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.footer-text {
+  color: var(--color-copyrite);
+  display: block;
+  text-align: center;
+  padding-top: 2rem;
+}
